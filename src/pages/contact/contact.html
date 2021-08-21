@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Contact
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Nome: </ion-label>
+      <ion-input [(ngModel)]="nome"  id="nome" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Email: </ion-label>
+      <ion-input [(ngModel)]="email"  id="email" type="email"></ion-input>
+    </ion-item>
+
+    <ion-item> 
+      <ion-label floating>Mensagem: </ion-label>
+      <ion-textarea [(ngModel)]="msg"  id="msg"></ion-textarea>
+    </ion-item>
+
+    <button (click)="enviar()" style="margin-left: 20px; margin-top: 20px;" ion-button color="light">Enviar</button>
+  </ion-list>
+</ion-content>
+
+
