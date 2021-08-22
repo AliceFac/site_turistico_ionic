@@ -25766,19 +25766,8 @@ button:active {
   background-color: #2e2d2d;
 }
 
-h2 {
+ion-title {
   font-size: 48px;
-  line-height: 58px;
-  margin-bottom: 20px;
-}
-
-ion-card {
-  margin-bottom: 60px;
-  border-radius: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-left: 20px;
-  padding-bottom: 20px;
 }
 
 ion-card:hover {
@@ -25786,35 +25775,59 @@ ion-card:hover {
   transform: scale(1.03);
 }
 
-.card-title {
-  font-size: 30px;
-  margin-left: 20px;
-  padding-top: 30px;
+.card-background-page ion-card {
+  position: relative;
+  text-align: center;
+  width: 1000px;
+  height: 450px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-img {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  max-width: 300px;
-  width: 300px;
+.card-background-page .text {
+  position: absolute;
+  width: 600px;
   height: 180px;
-  margin-top: 20px;
-  border: 2px solid #FFFFFF;
-  -webkit-box-shadow: 3px 3px 3px #000000;
-  box-shadow: 3px 3px 3px #000000;
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 10px;
+  left: 210px;
+  top: 124px;
+  background: rgba(41, 39, 39, 0.5);
+  border-radius: 20px;
 }
 
-.card-subtitle {
-  margin-top: 20px;
-  font-size: 18px;
-  line-height: 20px;
+.card-background-page .about {
+  position: absolute;
+  top: 90%;
+  right: 10px;
+  bottom: 40px;
+  width: 40px !important;
+  height: 35px !important;
+  font-size: 30px;
+  color: #fff;
+  background-color: rgba(41, 39, 39, 0.5);
+  border-radius: 50px;
 }
 
-.dotted-line {
-  border-bottom: 3px dotted #000000;
+.card-background-page .card-title {
+  position: absolute;
+  top: 2%;
+  font-size: 2.0em;
   width: 100%;
-  height: 15px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.card-background-page .card-subtitle {
+  font-size: 1.3em;
+  position: absolute;
+  top: 28%;
+  width: 100%;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+  padding-right: 10px;
+  padding-left: 10px;
 }
